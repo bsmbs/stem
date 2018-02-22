@@ -1,19 +1,9 @@
 {
-  "name": "basic-electron-react-boilerplate",
-  "version": "0.7.0",
-  "description": "Minimal and modern react+electron+webpack boilerplate",
-  "author": "Keith Weaver",
-  "homepage": "https://github.com/keithweaver/basic-electron-react-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/keithweaver/basic-electron-react-boilerplate.git"
-  },
-  "contributors": [
-    "Phillip Barbiero <https://github.com/pbarbiero>",
-    "Keith Weaver <https://github.com/keithweaver>",
-    "Denys Dovhan <https://github.com/denysdovhan>",
-    "Willy Ovalle <https://github.com/wovalle>"
-  ],
+  "name": "stem",
+  "version": "0.2.1",
+  "description": "Stem to najlepsza platforma gier",
+  "author": "Pizza",
+  "homepage": "https://xiaomii.cf",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
@@ -21,7 +11,7 @@
     "dev": "webpack-dev-server --hot --host 0.0.0.0 --port 4000 --config=./webpack.dev.config.js",
     "build": "webpack --config webpack.build.config.js",
     "package": "webpack --config webpack.build.config.js",
-    "postpackage": "electron-packager ./ --out=./builds"
+    "postpackage": "electron-packager ./ --out=./builds --electron-version=1.8.2 --platform=win32 --arch=ia32"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -39,5 +29,9 @@
     "style-loader": "^0.19.0",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "react-electron-web-view": "^2.0.1",
+    "react-titlebar-osx": "^1.1.0"
   }
 }

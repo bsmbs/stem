@@ -1,4 +1,218 @@
-h1 {
-  font-family: helvetica;
-  font-weight: 200;
+body {
+  background-color: #202225;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0;
+  height: 100%;
+  overflow-y: hidden;
+} .container {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+} .sidebar {
+  width: 25%;
+  background-color: #1a1c1f;
+  height: 100%;
+} .gry {
+  padding: 10px;
+  background-color: #212325;
+  text-align: center;
+  cursor: default;
+} html, #app, .ctct {
+  height: 100%;
+  overflow-y: hidden;
+} .menu {
+  height: 6%;
+  -webkit-app-region: drag;
+  position: relative;
+  background-color: #1a1c1f;
+} .tekt {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+} .odprawej {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+} .odprawej > * {
+  float: left;
+  margin-left: 10px;
+  cursor: default;
+} .przycisk:after {
+  float: left;
+} .przycisk:hover {
+  color: tomato;
+} .szczegoly {
+  flex: 1;
+  height: 90%;
+} .details {
+  padding: 0px 20px;
+} .ops {
+  display: inline-block;
+  margin: 0 4px !important;
+  padding: 12px;
+  background-color: #121516;
+  border: 1px;
+  border-radius: 10px 15px;
+  cursor: default;
+} .ops:hover {
+  transition: 500ms;
+  background-color: #0a4a86;
+} img {
+  /*width: 100%;
+  height: 200px; */
+  display: block;
+  margin: auto;
+  max-height: 400px;
+  max-width: 100%;
+} .smenu {
+  position: fixed;
+  bottom: 0;
+  background-color: #181a1d;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+} .smenu > * {
+  display: inline-block;
+  margin: 0;
+} .tytul {
+  font-weight: bolder;
+  font-size: 150%;
+} .zagraj {
+  background-color: #c9520d;
+} .zagraj:hover {
+  background-color: #8f3d0e;
+} .btn {
+  overflow: hidden;
+        padding: 10px;
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+        /* box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        */ color: #ecf0f1;
+        transition: background-color .3s;
+} .welcomx {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  top: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+} .ust {
+  padding: 10px;
+  background-color: #212325;
+  text-align: center;
+  display: block;
+} 
+
+/* animacje */
+.example-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  width: 100px;
+  transition: 700ms;
+}
+
+.example-leave {
+  opacity: 1;
+  width: 100px;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  width: 0px;
+  transition: 700ms;
+} /* przyciski */
+.nbtn {
+  margin: auto;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fafafa;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.4);
+          box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.4);
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  letter-spacing: .1rem;
+  font-size: .85rem;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+/* .nbtn:after, .nbtn:before {
+  position: absolute;
+  /* font-family: 'Barrio', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #006b34;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+} */
+/* .nbtn:before {
+  content: '_';
+  position: absolute;
+  left: 1.4rem;
+  top: .9rem;
+}
+.nbtn:after {
+  content: '>';
+  position: absolute;
+  left: .8rem;
+  top: 1rem;
+} */
+.nbtn:hover {
+  -webkit-box-shadow: 1px 1px 20px rgba(150, 150, 150, 0.2);
+          box-shadow: 1px 1px 20px rgba(150, 150, 150, 0.2);
+  top: -.1rem;
+  right: -.1rem;
+  cursor: pointer; 
+}
+/* .nbtn:hover:before {
+  content: '_';
+  position: absolute;
+  left: .8rem;
+  top: .7rem;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+.nbtn:hover:after {
+  content: '>';
+  position: absolute;
+  left: 1.1rem;
+  top: 1rem;
+} */ b {
+  margin-top: 5px;
+} .strona {
+  background-color: #0e3342;
+  margin-left: 10px;
+} .skan {
+  margin-left: 10px;
+  background-color: #7e1879;
+} .webview {
+  height: 95%;
+  width: 100%;
+} .stemit {
+  margin: 5px;
+} .biblioteka {
+  position: relative;
+  transition: 500ms;
+  left: -500px;
+  display: none;
+} .elo {
+  text-align: center;
+  padding: 20px;
 }
