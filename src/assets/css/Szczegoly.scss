@@ -1,0 +1,153 @@
+  // zmienne
+  $shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  // kontenery
+  .szczegoly {
+    flex: 1;
+    height: 90%;
+  } .details {
+    padding: 0px 20px;
+    // position: relative;
+  } .webview {
+    height: 95%;
+    width: 100%;
+  } .inneAutora {
+    position: absolute;
+    bottom: 50px;
+    padding: 25px;
+    margin: 50px;
+    background-color: #181a1d;
+    box-shadow: $shadow;
+  } 
+  // styl elementow
+  b {
+    margin-top: 5px;
+  } img {
+    /*width: 100%;
+    height: 200px; */
+    display: block;
+    margin: auto;
+    max-height: 355px;
+    max-width: 100%;
+  } 
+  // male boxy z informacja
+  .tytul {
+    font-weight: bolder;
+    font-size: 150%;
+  } .ops {
+    display: inline-block;
+    margin: 0 3px !important;
+    padding: 12px;
+    background-color: #121516;
+    border: 1px;
+    border-radius: 10px 15px;
+    cursor: default;
+  } .opsct {
+    display: inline-block;
+    margin: 0 3px !important;
+    padding: 12px;
+    background-color: #171b1d;
+    border: 1px;
+    border-radius: 10px 15px;
+    cursor: default;
+  } .ops:hover {
+    transition: 500ms;
+    // background-color: #B71C1C;
+  } .stemv {
+    padding: 30px;
+  } .stemv:hover {
+    background-color: #01579B;
+    transition: 200ms;
+  } .opis {
+    display: block;
+    margin: 12px auto;
+    padding: 12px;
+    width: 80%;
+    background-color: #121a1b;
+    border: 1px;
+    border-radius: 10px 15px;
+  }
+  
+  // dolne menu z przyciskami
+  .smenu {
+    position: fixed;
+    bottom: 0;
+    background-color: #181a1d;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+  } .smenu > * {
+    display: inline-block;
+    margin: 0;
+  }
+    // przyciski
+        // sam przycisk:
+  .nbtn {
+    margin: auto;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #fafafa;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.4);
+            box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.4);
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+    letter-spacing: .1rem;
+    font-size: .85rem;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .nbtn:hover {
+  -webkit-box-shadow: 1px 1px 20px rgba(150, 150, 150, 0.2);
+          box-shadow: 1px 1px 20px rgba(150, 150, 150, 0.2);
+  top: -.1rem;
+  right: -.1rem;
+  cursor: pointer; 
+  }   
+// konkretne przyciski:
+  .skan {
+    margin-left: 10px;
+    // background-color: #7e1879;
+    background-color: #6A1B9A;
+  } .stemit {
+    margin: 5px;
+  } .zagraj {
+    // background-color: #c9520d;
+    background-color: #BF360C;
+  } .strona {
+    background-color: #1B5E20;
+    margin-left: 10px;
+  } .source {
+    margin-left: 10px;
+    background-color: #24292e;
+  }
+// wiadomosc od autora na strone glownej
+.okienko {
+  width: 60%;
+  background-color: #202225;
+  box-shadow: $shadow;
+  margin: auto;
+  padding-bottom: 15px;
+  margin-top: 25px;
+} .dane {
+  padding-bottom: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #113770;
+} .msg {
+  margin: 0 15px;
+} .dane > span {
+  display: block;
+} .mode {
+  padding: 15px;
+  border-radius: 3px;
+  margin: 7px;
+  cursor: pointer;
+} .akcent {
+  padding: 15px;
+  border-radius: 3px;
+  margin: 7px;
+  cursor: pointer;
+}

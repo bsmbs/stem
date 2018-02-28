@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BabiliPlugin = require('babili-webpack-plugin');
+// const BabiliPlugin = require('babili-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Config directories
@@ -21,15 +21,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader'
+          use: [{loader: 'css-loader'}, {loader: 'sass-loader'}]
         }),
         include: defaultInclude
       },
       {
-        test: /\.jsx?$/,
+        test: /\.js?$/,
         use: [{ loader: 'babel-loader' }],
         include: defaultInclude
       },
@@ -52,7 +52,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    new BabiliPlugin()
+    // new BabiliPlugin()
   ],
   stats: {
     colors: true,
