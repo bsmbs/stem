@@ -14,7 +14,11 @@ let dev = false;
 if ( process.defaultApp || /[\\/]electron-prebuilt[\\/]/.test(process.execPath) || /[\\/]electron[\\/]/.test(process.execPath) ) {
   dev = true;
 }
+<<<<<<< HEAD
 let iconpath = path.resolve(__dirname, 'ikona.ico');
+=======
+let iconpath = path.resolve(__dirname, 'ikona.png');
+>>>>>>> nowe wydanie
 
 function createWindow() {
   // Create the browser window.

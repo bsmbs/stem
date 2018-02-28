@@ -22,9 +22,15 @@ module.exports = {
   module: {
     rules: [
       {
+<<<<<<< HEAD
         test: /\.css$/,
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
         include: path.resolve(__dirname, 'src/assets')
+=======
+        test: /(\.css|.scss)$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, {loader: 'sass-loader'}],
+        include: defaultInclude
+>>>>>>> nowe wydanie
       },
       {
         test: /\.jsx?$/,
@@ -40,6 +46,10 @@ module.exports = {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [{ loader: 'file-loader?name=font/[name]__[hash:base64:5].[ext]' }],
         include: defaultInclude
+      },
+      {
+        test: /\.json$/,
+        use: [{ loader: 'json-loader' }]
       }
     ]
   },

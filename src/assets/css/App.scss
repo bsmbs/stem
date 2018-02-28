@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100%;
+  overflow-y: hidden;
+  user-select: none;
+} .container {
+  display: flex;
+  // align-items: stretch;
+  height: 100%;
+} .sidebar {
+  flex-basis: 25%;
+  // width: 25%;
+  // height: 100%;
+} .gry {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  cursor: default;
+} html, #app, .ctct {
+  height: 100%;
+  overflow-y: hidden;
+} .welcomx {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+} .biblioteka {
+  transition: 200ms;
+  left: -500px;
+  opacity: 0.9;
+  display: none;
+} .stemowo {
+  // position: relative;
+  opacity: 0.9;
+  transition: 200ms;
+  left: -500px;
+  display: none;
+} .elo {
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-color: #202225;
+  color: white;
+} .gry {
+  background-color: #212325;
+} .sidebar {
+  background-color: #1a1c1f;
+} 
