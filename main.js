@@ -14,11 +14,12 @@ let dev = false;
 if ( process.defaultApp || /[\\/]electron-prebuilt[\\/]/.test(process.execPath) || /[\\/]electron[\\/]/.test(process.execPath) ) {
   dev = true;
 }
+let iconpath = path.resolve(__dirname, 'ikona.png');
 
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 1024, height: 768, show: false
+    width: 1000, height: 800, show: false, resizable: true, icon: iconpath, frame: false, minWidth: 800, minHeight: 700 
   });
 
   // and load the index.html of the app.

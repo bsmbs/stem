@@ -1,0 +1,27 @@
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    outline: none;
+    margin: 7px;
+    font-size: 110%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} label {
+    font-size: 110%;
+    text-align: center;
+    margin: 10px;
+} .opengl {
+    display: flex;
+    flex-direction: row;
+} .opengla {
+    order: 1;
+    margin: 15px;
+    flex-grow: 1;
+} .openglb {
+    order: 2;
+    margin: 15px;
+    flex-grow: 1;
+}
