@@ -22,15 +22,9 @@ module.exports = {
   module: {
     rules: [
       {
-<<<<<<< HEAD
-        test: /\.css$/,
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
-        include: path.resolve(__dirname, 'src/assets')
-=======
         test: /(\.css|.scss)$/,
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, {loader: 'sass-loader'}],
         include: defaultInclude
->>>>>>> nowe wydanie
       },
       {
         test: /\.jsx?$/,
