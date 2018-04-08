@@ -6,6 +6,8 @@
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/pizza61/stem.svg?style=flat-square)]()
 [![GitHub contributors](https://img.shields.io/github/contributors/pizza61/stem.svg?style=flat-square)]()
 
+**Projekt porzucony. Zamiast aplikacji desktopowej powstała aplikacja internetowa dostępna pod adresem https://papryka.pro/stem**
+
 Stem to pseudo platforma gamingowa, stworzona dla społeczności youtubera [@HardwareExplained](https://github.com/HardwareExplained)
 
 Ta aplikacja zbiera większość gier stworzonych przez społeczność HardwareExplained w jednym miejscu.
